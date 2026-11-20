@@ -1,0 +1,75 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP+c1ishERVSU0VsDysBL1a",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kiruba-23/python-praticing/blob/main/Number%20guessing%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 15,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ljb9DJ1Zdcu0",
+        "outputId": "f5305064-00b9-4404-f148-59e05944d63e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "WELCOME TO THE NUMBER GUESSING GAME\n",
+            " 1. Think of any number.\n",
+            " 2. Multiply it by 2.\n",
+            " 3. Add 10 to the result.\n",
+            " 4. Multiply the result by 5.\n",
+            "Now enter your final answer: 76\n",
+            "Your guessing number is 2.6\n",
+            "Thank you for playing\n"
+          ]
+        }
+      ],
+      "source": [
+        "class game():\n",
+        "    def __init__(self):\n",
+        "      print(f\"WELCOME TO THE NUMBER GUESSING GAME\")\n",
+        "      print(f\" 1. Think of any number.\\n 2. Multiply it by 2.\\n 3. Add 10 to the result.\\n 4. Multiply the result by 5.\")\n",
+        "      self.number=int(input(\"Now enter your final answer: \"))\n",
+        "class task(game):\n",
+        "    def __init__(self):\n",
+        "       super().__init__()\n",
+        "    def task1(self):\n",
+        "        substract=self.number-50\n",
+        "        divide= substract/10\n",
+        "        print(\"Your guessing number is\",divide)\n",
+        "        print(\"Thank you for playing\")\n",
+        "\n",
+        "object=task()\n",
+        "object.task1()"
+      ]
+    }
+  ]
+}
